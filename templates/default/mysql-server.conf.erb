@@ -1,6 +1,6 @@
 #Monitoring Mysql Service
 
-check process mysql with pidfile /var/run/mysqld-default/mysql.pid
+check process mysql with pidfile /var/run/mysqld-default/mysqld.pid
   group database
   start program = "/usr/sbin/service mysql-default start"
   stop program = "/usr/sbin/service mysql-default stop"
