@@ -1,8 +1,8 @@
 #Monitoring Mysql Service
 
-check process mysql with pidfile /var/run/mysqld-default/mysqld.pid
+check process mysql with pidfile /var/run/mysql-mysql5x/mysqld.pid
   group database
-  start program = "/usr/sbin/service mysql-default start"
-  stop program = "/usr/sbin/service mysql-default stop"
+  start program = "/usr/sbin/service mysql-mysql5x start"
+  stop program = "/usr/sbin/service mysql-mysql5x stop"
   if failed host 127.0.0.1 port 3306 then restart
   if 15 restarts within 15 cycles then timeout
